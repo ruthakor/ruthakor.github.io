@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <title>About Data</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <h1><a href="home.html">Visualization of Complex Data <span class="logo_color"> | Final Project</span></a></h1>
+                    <h3>Relationship between Happiness and Development</h3>
+                </div>
+                <!-- logo_text -->
+            </div>
+            <!-- logo -->
+
+            <div id="menubar">
+                <ul id="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="selected"><a href="about.html">About Data</a></li>
+                    <li><a href="dashboards.html">Dashboards</a></li>
+                    <li><a href="conclusion.html">Conclusion</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- menu -->
+            </div>
+            <!-- menubar -->
+        </div>
+        <!-- header -->
+
+
+            <div id="content">
+                <h1>About Data</h1>
+                
+                
+                <button class="accordion">Data Source</button>
+                <div class="panel">
+                    <p>The Sustainable development data obtained from SDG Index and Dashboard also comprises of 
+                       five csv files for years 2015 through 2019 which comprises of country code, SDG index score for 
+                       each country and each country’s score on each of the 17 development goals. The World Happiness data 
+                       was downloaded from Kaggle. It contains five csv files for years 2015 to 2019 </p>
+                </div>
+
+                <button class="accordion">Data Timeframe</button>
+                <div class="panel">
+                    <p>The timeframe for this Data Visualization is 5 years from 2015 to 2019</p>
+                </div>
+
+                <button class="accordion">Variables</button>
+                <div class="panel">
+                    <p> Happiness Data includes the following variables - Happiness score, happiness rank, GDP Per Capita, social support, 
+                        healthy life expectancy, freedom to make life choices, perception of corruption and generosity.
+                        Development data includes development index, region, income group,country rank and average score 
+                        on all the sustaibnable development goals.
+                    </p>
+                </div>
+            </div>
+            <!-- content -->
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+     
+    
+</div>
+<!-- site_content -->
+
+<div id="footer">
+Copyright &copy;
+<script>
+    var d = new Date();
+    document.write(d.getFullYear());
+</script>
+| <a href="#">HTML5</a> | <a href="#">CSS3</a> | <a href="#">ruthakor</a>
+</div>
+<!-- footer -->
+</div>
+<!-- main -->
+</body>
+</html>
